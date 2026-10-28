@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1018" />
+  <meta name="description" content="Portfolio of Angel Mike M. Catambacan Jr., a Computer Engineering student exploring IT infrastructure, practical technology, computer vision, and design." />
+  <meta property="og:title" content="Angel Mike — Computer Engineering & Practical Technology" />
+  <meta property="og:description" content="Selected projects, experience, technical skills, and ways to connect." />
+  <title>Angel Mike — Computer Engineering Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <!-- Set the saved theme before styles render to prevent a light-theme flash. -->
+  <script>
+    try {
+      if (localStorage.getItem('am-theme') === 'light') {
+        document.documentElement.dataset.theme = 'light';
+      }
+    } catch { /* A blocked storage API must not prevent rendering. */ }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#top" class="brand" aria-label="Angel Mike, go to top"><span class="brand-icon">am<span>.</span></span><span class="brand-name">angel mike<span class="brand-dot"> / </span>portfolio</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn command-trigger" id="commandTrigger" aria-label="Open quick navigation" title="Quick navigation (Ctrl+K)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><span class="kbd">Ctrl K</span></button>
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Switch theme"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.7 15.3A9 9 0 0 1 8.7 3.3 9 9 0 1 0 20.7 15.3Z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" aria-labelledby="heroTitle">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse-dot"></span> Computer Engineering · Muntinlupa, Philippines</div>
+        <p class="intro-label">Hey, I’m Angel Mike <span class="wave" aria-hidden="true">✳</span></p>
+        <h1 id="heroTitle">Curious about <span class="gradient-text">systems.</span><br/>Driven by <span class="underlined-word">solutions.</span></h1>
+        <p class="hero-description">I'm a fourth-year Computer Engineering student learning at the intersection of <strong>IT operations, technology, and design.</strong> I like understanding how things work — and making them easier for people to use.</p>
+        <div class="hero-cta"><a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="mailto:angelmikecatambacan1@gmail.com">Let's connect <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-meta"><span><span class="mini-check">✓</span> SolarWinds internship experience</span><span><span class="mini-check">✓</span> Building, learning, exploring</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Stylized systems dashboard illustration">
+        <div class="art-dots" aria-hidden="true"></div>
+        <div class="terminal-card floating-panel">
+          <div class="terminal-top"><span class="terminal-lights"><i></i><i></i><i></i></span><span>mike@portfolio ~</span><span class="terminal-cross">⌁</span></div>
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">➜</span> <span class="term-path">~/profile</span> <span class="term-command">whoami</span></p>
+            <p class="term-output">angel_mike</p>
+            <p class="term-output muted-terminal">computer engineering student</p>
+            <p><span class="terminal-prompt">➜</span> <span class="term-path">~/interests</span> <span class="term-command">ls</span></p>
+            <div class="terminal-tags"><span>IT Support</span><span>Systems</span><span>Computer Vision</span><span>UI/UX</span></div>
+            <p><span class="terminal-prompt">➜</span> <span class="term-path">~/next</span> <span class="terminal-caret">▌</span></p>
+          </div>
+        </div>
+        <div class="floating-stat stat-left"><span class="stat-symbol">⌘</span><span><small>My approach</small><strong>Learn → Build → Improve</strong></span></div>
+        <div class="floating-stat stat-right"><span class="online-dot"></span><span><small>Currently</small><strong>Exploring IT careers</strong></span></div>
+      </div>
+      <a href="#about" class="scroll-down">Scroll to explore <span>↓</span></a>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="aboutTitle">
+      <div class="container section-layout reveal">
+        <div class="section-side"><span class="section-number">01 / INTRO</span><h2 id="aboutTitle">A little<br/>about me<span class="period">.</span></h2></div>
+        <div class="section-main about-content"><p class="lead">I’m interested in the space where <em>technology, people, and good experiences</em> meet.</p><p>As a Computer Engineering student at <strong>Colegio de Muntinlupa</strong>, I’m developing a foundation in networking, computer hardware, software, and data. My internship at SolarWinds gave me a closer look at customer-facing operations, account analysis, CRM workflows, and collaborative problem-solving.</p><p>Outside the classroom, I’ve helped create digital designs for clients, worked on web-based systems, and explored computer vision for our AcneSight project. I’m particularly interested in gaining more hands-on experience in IT support, infrastructure, and analytics.</p><div class="about-highlights"><div><strong>04<span>th</span></strong><span>Year, Computer Engineering</span></div><div><strong>2026</strong><span>SolarWinds internship</span></div><div><strong>03</strong><span>Featured learning & technical projects</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-header reveal"><div><span class="section-number">02 / SELECTED WORK</span><h2 id="projectsTitle">Things I’ve <span class="serif-italic">worked on.</span></h2><p>Classroom ideas, real-world challenges, and ongoing learning.</p></div><div class="filter-controls" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="web" aria-pressed="false">Web</button><button class="filter" data-filter="ai" aria-pressed="false">AI / ML</button><button class="filter" data-filter="learning" aria-pressed="false">Learning</button></div></div>
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="web" tabindex="0" data-project="labtrack" role="button" aria-label="View LabTrack project details"><div class="project-art art-labtrack"><div class="mock-browser"><div class="mock-nav"><span class="tiny-logo">L<span>+</span></span><span>Dashboard</span><span>Inventory</span><span>Requests</span></div><div class="mock-inner"><div class="mock-head"><span>Equipment overview</span><span class="mock-chip">● Active</span></div><div class="mock-stats"><div><small>Total items</small><b>128</b></div><div><small>Available</small><b>94</b></div><div><small>Requests</small><b>12</b></div></div><div class="mock-table"><div><i></i><span></span><em></em></div><div><i></i><span></span><em></em></div><div><i></i><span></span><em></em></div></div></div></div><span class="art-note">UI concept · illustrative</span></div><div class="project-info"><div class="project-topline"><span>01 / WEB DEVELOPMENT</span><span class="project-arrow">↗</span></div><h3>LabTrack</h3><p>A web-based inventory and equipment reservation system with tracking and request-management workflows.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span></div></div></article>
+          <article class="project-card reveal" data-category="ai" tabindex="0" data-project="acnesight" role="button" aria-label="View AcneSight project details"><div class="project-art art-acnesight"><div class="scan-frame"><div class="scan-grid"></div><div class="scan-ring ring-one"></div><div class="scan-ring ring-two"></div><div class="scan-center">A<span>S</span></div><span class="scan-corner corner-a"></span><span class="scan-corner corner-b"></span><span class="scan-corner corner-c"></span><span class="scan-corner corner-d"></span><div class="scan-status">MODEL DEVELOPMENT <span>●</span></div></div><span class="art-note">Concept visual · not diagnostic output</span></div><div class="project-info"><div class="project-topline"><span>02 / COMPUTER VISION</span><span class="project-arrow">↗</span></div><h3>AcneSight</h3><p>An ongoing research prototype exploring acne lesion detection and classification using computer vision.</p><div class="tags"><span>YOLO26</span><span>ResNet</span><span>Roboflow</span><span>Raspberry Pi</span></div></div></article>
+          <article class="project-card reveal" data-category="learning" tabindex="0" data-project="netwatch" role="button" aria-label="View NetWatch project details"><div class="project-art art-netwatch"><div class="net-panel"><div class="net-head"><span><i></i> netwatch / monitor</span><span>● Online</span></div><svg class="net-graph" viewBox="0 0 440 140" aria-hidden="true"><defs><linearGradient id="graphFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#7fe1cc" stop-opacity=".28"/><stop offset="100%" stop-color="#7fe1cc" stop-opacity="0"/></linearGradient></defs><path d="M0 105 L30 80 65 95 104 51 140 69 177 58 215 75 252 33 290 55 330 42 370 67 409 26 440 39 V140 H0Z" fill="url(#graphFill)"/><path d="M0 105 L30 80 65 95 104 51 140 69 177 58 215 75 252 33 290 55 330 42 370 67 409 26 440 39" stroke="#7fe1cc" fill="none" stroke-width="3"/></svg><div class="net-data"><span>Ping <strong>Successful</strong></span><span>DNS <strong>Successful</strong></span><span>Gateway <strong>Reachable</strong></span></div></div><span class="art-note">Learning-project concept</span></div><div class="project-info"><div class="project-topline"><span>03 / PERSONAL LEARNING</span><span class="project-arrow">↗</span></div><h3>NetWatch <span class="status-pill">In progress</span></h3><p>A hands-on network monitoring learning project, moving from basic connectivity tests toward a Python engine.</p><div class="tags"><span>Networking</span><span>Python</span><span>Diagnostics</span></div></div></article>
+        </div>
+        <p class="project-footnote">Project illustrations are conceptual rather than screenshots of deployed applications. Click a card to read what I actually worked on.</p>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience" aria-labelledby="experienceTitle">
+      <div class="container section-layout"><div class="section-side reveal"><span class="section-number">03 / THE JOURNEY</span><h2 id="experienceTitle">Experience<br/>& learning<span class="period">.</span></h2><p class="side-helper">Each experience has taught me a different part of building and supporting technology.</p></div><div class="section-main timeline">
+        <article class="timeline-entry reveal"><div class="time-mark"><span></span></div><div class="timeline-meta">JUN — AUG 2026 <span>·</span> INTERNSHIP</div><h3>Customer Success Manager Intern</h3><h4>SolarWinds Software Asia Pte. Ltd.</h4><p>Supported EMEA account re-engagement initiatives, examined customer engagement and risk indicators, maintained CRM updates, and coordinated with colleagues on account-health workflows.</p><div class="tags"><span>Account analysis</span><span>CRM</span><span>Stakeholder communication</span></div></article>
+        <article class="timeline-entry reveal"><div class="time-mark"><span></span></div><div class="timeline-meta">JAN 2023 — JUN 2026 <span>·</span> FREELANCE</div><h3>Graphic Designer</h3><h4>Independent client work</h4><p>Developed branding, social media assets, and marketing visuals; managed projects from concept and wireframes through revisions and delivery.</p><div class="tags"><span>Visual design</span><span>Client collaboration</span><span>Canva & Figma</span></div></article>
+        <article class="timeline-entry reveal"><div class="time-mark"><span></span></div><div class="timeline-meta">OCT 2025 — APR 2026 <span>·</span> EVENT ROLE</div><h3>Global Robotics Referee / Judge</h3><h4>Sumobot Competition · DLSZ</h4><p>Oversaw match procedures, robot inspections, arena readiness, and fair play during robotics competition events.</p><div class="tags"><span>Robotics</span><span>Technical procedures</span><span>Coordination</span></div></article>
+        <article class="timeline-entry reveal"><div class="time-mark"><span></span></div><div class="timeline-meta">AUG 2023 — PRESENT <span>·</span> EDUCATION</div><h3>B.S. Computer Engineering</h3><h4>Colegio de Muntinlupa</h4><p>Fourth-year student studying networking, operating systems, microprocessors, computer hardware, programming, robotics, and data science with AI.</p><div class="tags"><span>Dean’s Lister · 1st year, 1st semester</span></div></article>
+      </div></div>
+    </section>
+
+    <section class="section toolkit-section" id="toolkit" aria-labelledby="toolkitTitle"><div class="container"><div class="section-header reveal"><div><span class="section-number">04 / TOOLKIT</span><h2 id="toolkitTitle">What I work <span class="serif-italic">with.</span></h2><p>A growing set of skills, from networking fundamentals to interface design.</p></div></div><div class="skills-grid">
+      <article class="skill-group reveal"><div class="skill-icon">⌘</div><h3>Systems & networking</h3><p>Network fundamentals, Cisco Packet Tracer, basic hardware troubleshooting, and operating systems.</p><div class="skill-pills"><span>Packet Tracer</span><span>Networking</span><span>Hardware</span></div></article>
+      <article class="skill-group reveal"><div class="skill-icon">{ }</div><h3>Programming & web</h3><p>Foundational programming and responsive front-end projects.</p><div class="skill-pills"><span>HTML / CSS</span><span>JavaScript</span><span>C++</span><span>Python basics</span></div></article>
+      <article class="skill-group reveal"><div class="skill-icon">◈</div><h3>AI & data</h3><p>Coursework and project exposure to data tools and computer vision methods.</p><div class="skill-pills"><span>NumPy</span><span>Pandas</span><span>YOLO26</span><span>ResNet</span></div></article>
+      <article class="skill-group reveal"><div class="skill-icon">✳</div><h3>Design & prototyping</h3><p>Building interfaces, brand visuals, and hardware concepts with accessible design tools.</p><div class="skill-pills"><span>Figma</span><span>Canva</span><span>SolidWorks</span><span>Proteus</span></div></article>
+      </div></div></section>
+
+    <section class="section certificates-section" id="certifications" aria-labelledby="certTitle"><div class="container"><div class="section-header reveal"><div><span class="section-number">05 / CONTINUOUS LEARNING</span><h2 id="certTitle">Milestones <span class="serif-italic">along the way.</span></h2></div></div><div class="cert-grid reveal"><div class="cert-item"><div class="cert-medal">✧</div><div><h3>HCIA-AI V3.5 Course</h3><span>Huawei · May 2025</span></div></div><div class="cert-item"><div class="cert-medal">✧</div><div><h3>AI Career Readiness Training</h3><span>August 2026</span></div></div><div class="cert-item"><div class="cert-medal">✧</div><div><h3>Dean’s Lister</h3><span>Colegio de Muntinlupa · Year 1, Semester 1</span></div></div></div></div></section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contactTitle"><div class="container contact-panel reveal"><div class="contact-glow" aria-hidden="true"></div><span class="section-number">06 / SAY HELLO</span><h2 id="contactTitle">Let's build something<br/><span class="gradient-text">useful together.</span></h2><p>Open to conversations about internships, collaboration, and learning opportunities in technology.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:angelmikecatambacan1@gmail.com">Send me an email ↗</a><button class="btn btn-secondary" id="copyEmail" data-email="angelmikecatambacan1@gmail.com">Copy email <span aria-hidden="true">⧉</span></button></div><div class="contact-links"><a href="https://www.linkedin.com/in/catambacan1/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span>Muntinlupa, Philippines</span></div></div></section>
+  </main>
+
+  <footer class="footer container"><div><span class="footer-brand">am<span>.</span></span><span>© <span id="year"></span> Angel Mike Catambacan Jr.</span></div><span>Thoughtfully built, one project at a time.</span><a href="#top" aria-label="Return to the top">Back to top ↑</a></footer>
+
+  <dialog id="projectDialog" class="project-dialog" aria-labelledby="dialogTitle"><div class="dialog-content"><button class="dialog-close" id="closeProjectDialog" autofocus aria-label="Close project details">×</button><span class="section-number" id="dialogEyebrow">PROJECT</span><h2 id="dialogTitle"></h2><p id="dialogSummary" class="dialog-summary"></p><div class="dialog-divider"></div><h3>What I worked on</h3><ul id="dialogDetails"></ul><div class="tags" id="dialogTags"></div><p class="dialog-note">Want to learn more about this project? <a href="mailto:angelmikecatambacan1@gmail.com">Ask me by email ↗</a></p></div></dialog>
+  <dialog id="commandDialog" class="command-dialog" aria-label="Quick navigation"><div class="command-search"><span>⌕</span><input id="commandInput" autocomplete="off" spellcheck="false" placeholder="Search sections, projects, or contact..." aria-label="Search portfolio" role="combobox" aria-autocomplete="list" aria-controls="commandResults" aria-expanded="false" /><kbd>ESC</kbd></div><div class="command-results" id="commandResults" role="listbox" aria-label="Portfolio sections"></div><div class="command-bottom">Navigate with ↑ ↓ <span>·</span> Open with ↵</div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
